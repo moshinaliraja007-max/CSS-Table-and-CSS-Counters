@@ -1,0 +1,152 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin-right: 10px;
+}
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.student-table table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.student-table th,
+.student-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.student-table th{
+    background-color: #3498db;
+    color: white;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f2f6f9;
+}
+
+.student-table tr:hover {
+    background-color: #d1e7fd;
+    transition: 0.3s;
+}
+
+/* Task Counter List */
+.task-counter {
+    width: 50%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-list {
+    counter-reset: task;
+    padding-left: 0;
+}
+
+.task-list li {
+    list-style: none;
+    margin: 15px 0;
+    padding-left: 45px;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.task-list li::before {
+    counter-increment: task;
+    content: counter(task);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 20px 20px 20px;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-container div {
+    flex: 1 1 300px;
+    margin: 15px;
+}
+
+.footer-container h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #f39c12;
+}
+
+.footer-container p, 
+.footer-container a {
+    margin: 8px 0;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    color: #f39c12;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+/* Footer Icons Spacing */
+.footer-container i {
+    margin-right: 8px;
+    margin-top: 10px;
+}
